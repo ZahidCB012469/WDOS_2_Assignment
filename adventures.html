@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The Beach view hotel">
+        <title> Adventures of The Beach View</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="inquire.js" defer></script>
+    </head>
+    <body id="body1">
+        <!-- Navigation Bar -->
+        <header class="bg_img">
+            <a href="index.html"><img class="logo" src="home_logo.png" alt="mainlogo"></a>
+            <nav class="nav" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="adventures.html">Adventures</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Book Button -->
+        <div class="bookbtn">
+            <a href="booknow.html">Book Now</a>
+        </div>
+        <section>
+            <!-- Adventure Selection-->
+            <h1 class="adv_h1">Adventure Experiences</h1>
+            <div class="adv_col1">
+                <div class="adv_col1_sec1">
+                    <select name="branch_select_name" class="branch_adv">
+                        <option>Select Branch</option>
+                        <option value="adv_Colombo">Colombo</option>
+                        <option value="adv_Negombo">Negombo</option>
+                        <option value="adv_Galle">Galle</option>
+                    </select>
+                </div>
+                <div class="adv_col1_sec2">
+                    <select name="adv_select_name" class="branch_adv">
+                        <option>Select Adventure</option>
+                        <option value="architecture">Architecture</option>
+                        <option value="history">History</option>
+                        <option value="art">Art</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section>
+            <!-- Adventure one-->
+            <div class="col1">
+                <img src="adv_1.jpg" class="adv_img1" alt="adv_img1">
+                <!-- Adventure one-->
+                <div class="adv_col1_para1">
+                    <h2>Colombo National Museum</h2>
+                    <p><br>Picture a big white colonial mansion, with a beautifully maintained lawn on the outside and a treasure
+                        of ancient Sri Lankan history on the inside. Or, just visit the Colombo National Museum.</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.350879398478!2d79.8609032!3d6.9099991!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596fa1f4b2af%3A0xd90a283d68f9a48d!2sColombo%20National%20Museum!5e0!3m2!1sen!2slk!4v1693561479158!5m2!1sen!2slk" class="adv_loc1"></iframe>
+            </div>
+        </section>
+        <br><br>
+        <section>
+            <!-- Adventure Two-->
+            <div class="col1">
+                <img src="adv2.JPG" class="adv_img2" alt="adv_img2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126749.05972749721!2d79.8294127!3d6.9015913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25940e5abc593%3A0x99eb48ea9649a0fb!2sCrescat%20Boulevard!5e0!3m2!1sen!2slk!4v1693561368463!5m2!1sen!2slk" class="adv_loc2" ></iframe>
+                <div class="adv_col1_para2">
+                    <h3>Crescat Boulevard</h3>
+                    <p>The Beach View is not only the most luxurious business hotel in Colombo, it is also a collective experience for a dynamic traveller.
+                        An essential part of this essence is the adjoining shopping mall, Crescat.</p>
+                </div>
+            </div>
+        </section>
+        <div id="inquirePopup" class="inquirePopupClass">
+            <h3>Inquire Sent Successfully!!!</h3>
+            <button type="button" id="InqcloseBtn">Close</button>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <fieldset class="inquire_field2">
+                <legend>Inquire Now</legend>
+                <form>
+                Hotels :
+                    <select name="hotels" id="hotels">
+                        <option>Select Branch</option>
+                        <option value="colombo">Colombo Branch</option>
+                        <option value="galle">Galle Branch</option>
+                        <option value="kandy">Kandy Branch</option>
+                    </select>
+                    Contact Number : <input type="tel" name="contact_num" size="13" maxlength="14" required="required">
+                    Email : <input type="email" name="email" required="required">
+                    Other : <input type="text" name="other_msg"> &nbsp;&nbsp;
+                    <span id="grid_button">
+                        <button type="button" name="submit" id="inquiresubBtn" class="submit_btn">Submit</button>
+                        <input type="reset" name="reset" class="reset_btn">
+                    </span>
+                </form>
+            </fieldset>
+            <br>
+           <div class="col1">
+                <div class="footerul">
+                    <ul>
+                        <li>Contact Number : 076 663 0615</li>
+                        <li>Address : 344, School lane, Colombo.</li>
+                        <li>Email : beach.view@gmail.com</li>
+                    </ul>
+                </div>
+                <a href="index.html"><img src="home_logo2.png" class="footerlogo1" alt="footerlogo1"></a>
+                <div class="footerul">
+                    <ol>
+                        <li>INQUIRIES: INFO@THEBEACHVIEW.COM</li>
+                        <li>RESERVATIONS: RESERVATIONS@THEBEACHVIEW.COM</li>
+                    </ol>
+                </div>
+                <div class="s_m">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="facebook.png" class="s_m1" alt="fb_pic"></a>
+                    <a href="https://www.instagram.com/accounts/login/"><img src="instagram.png" class="s_m1" alt="insta_pic"></a>
+                    <a href="https://www.tiktok.com/"><img src="tiktok.png" class="s_m1" alt="tiktok_pic"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="twitter.png" class="s_m1" alt="twitter_pic"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<!-- REFRENCES:
+1. https://www.thekingsburyhotel.com/
+2. https://www.cinnamonhotels.com/hikkatranzcinnamon/meetings-and-conferences
+3. https://www.gallefacehotel.com/
+4. https://www.shangri-la.com/group/our-story/
+5. https://www.jetwinghotels.com/jetwingblue/
+6. https://www.jetwinghotels.com/jetwingcolomboseven/
+7. https://www.visitcalifornia.com/best-san-diego-hotels/
+8. https://www.cinnamonhotels.com/cinnamongrandcolombo/experiences#Adventures
+9. https://kr.lakpura.com/pages/crescat-boulevard
+10. https://www.freepik.com/free-vector/empty-office-due-pandemic_7966692.htm#query=meeting%20background&position=37&from_view=keyword&track=ais 
+11. https://www.museum.gov.lk/web/index.php?option=com_regionalm&task=regionalmuseum&id=6&lang=en
+12. https://crescat-boulevard.business.site/-->

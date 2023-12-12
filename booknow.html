@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The Beach view hotel">
+        <title>Book Now Beach View</title>
+        <link rel="stylesheet" href="bookingstyle.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body id="body2">
+        <header class="header_1">
+            <!-- Navigation Bar -->
+            <a href="index.html"><img class="logo" src="home_logo2.png" alt="mainlogo"></a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="adventures.html">Adventures</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Book Rooms Form -->
+        <h1 class="res_h1">BOOK YOUR STAY</h1>
+        <div class="bookcol1">
+            <form class="allformsClass">
+                <h2>Book Rooms</h2>
+                <!-- Personal Information Fieldset -->
+                <fieldset class="personalInfoClass">
+                    <legend>Personal Information : </legend>
+                    <label for="personName">Name : </label>
+                    <input type="text" id="personName" placeholder="Enter Full Name" required>
+                    <label for="contactId">Contact Number : </label>
+                    <input type="tel" id="contactId" placeholder="Enter Phone Number" required>
+                    <label for="emailId">Email Address : </label>
+                    <input type="email" id="emailId" placeholder="Enter Email Address">
+                    <label for="countryId">Country : </label>
+                    <input type="text" id="countryId" placeholder="Country">
+                    <label for="gender">Gender : </label>
+                    <select name="genber" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select><br>
+                    <label for="specialreqId">Special Requests : </label> <br>
+                    <textarea id="specialreqId" placeholder="Special Requests..."></textarea>
+                </fieldset>
+                <!-- Branch Fieldset -->
+                <fieldset >
+                    <legend>Branch : </legend>
+                    <input type="radio" name="branchName" id="colomboBranch" value="colombo" class="branchClass">
+                    <label for="colomboBranch">Colombo </label>
+                    <input type="radio" name="branchName" id="negomboBranch" value="negombo" class="branchClass">
+                    <label for="negomboBranch">Negombo </label>
+                    <input type="radio" name="branchName" id="galleBranch" value="galle" class="branchClass">
+                    <label for="galleBranch">Galle </label>
+                </fieldset>
+                <!-- Rooms Details Fieldset -->
+                <fieldset>
+                    <legend>Rooms Details : </legend>
+                    <p>
+                        <input type="radio" name="roomType" id="single" value="single" >
+                        <label class="classroomType"  for="single">Single</label>
+                        <input type="radio" name="roomType" id="double" value="double" >
+                        <label class="classroomType" for="double">Double</label>
+                        <input type="radio" name="roomType" id="triple" value="triple" >
+                        <label class="classroomType" for="triple">Triple</label>
+                        <label class="numofRooms">Number of Rooms :</label>
+                        <input type="number" min="1" max="20" name="roomType" id="rumberofRooms" value="1" class="duration">
+                        <input type="checkbox" name="roomType" id="extraBed" value="extrabed">
+                        <label for="extraBed"> Extra Bed </label>
+                    </p>
+                </fieldset>
+                <!-- Number of Meals -->
+                <fieldset>
+                    <legend>Number of Meals : </legend>
+                    <p>
+                        <label class="adultsNum" for="adultsnumber">Number of Adults : </label> 
+                        <input type="number" name="mealsNum" id="adultsnumber" class="adultsnumber" min="1" value="1" max="6" required> <br>
+                        <label class="childrenNum" for="childrenNumber">Number of Children (Below 5 years of age) : </label>
+                        <input type="number" name="mealsNum" id="childrenbelwo5" class="childrenNumber" min="0" value="0"> <br>
+                        <label class="childrenNum" for="childrenNumber">Number of Children (Above 5 years of age) : </label>
+                        <input type="number" name="mealsNum" id="childrenabove5" class="childrenNumber" min="0" value="0">
+                        <p>Note : LKR 10,000 per meal for adults and extra LKR 5,000 will be added for Kids above 5 years of age</p>
+                    </p>
+                </fieldset>
+                <!-- Duration fieldset -->
+                <fieldset>
+                    <legend>Duration : </legend>
+                    <p>
+                        <label class="duration" for="checkIn">Check-In : </label>
+                        <input type="date" id="checkIn" name="duration" required>
+                        <label class="duration" for="checkOut">Check-Out : </label>
+                        <input type="date" id="checkOut" name="duration" required>
+                        <span>
+                            <label id="numofDays">Number of Days</label>
+                        </span>
+                    </p>
+                </fieldset>
+                <!-- Extra requirements Fieldset -->
+                <fieldset>
+                    <legend>Extra Requirements : </legend>
+                    <p class="extrareqclass">
+                        <label class="wificlass">WIFI</label>
+                        <input type="checkbox" name="extrareq" id="wifi" value="wifi">
+                    </p>
+                    <label>Different Pool Views : </label>
+                    <p class="extrareqclass">
+                        <label class="extrareqlbl">Pool View</label>
+                        <input type="radio" name="extrareq" id="poolview" value="poolview">
+                        <label class="extrareqlbl2">Garden View</label>
+                        <input type="radio" name="extrareq" id="gardenview" value="gardenview">
+                    </p>
+                </fieldset>
+                <!-- Promo Code Fieldset -->
+                <fieldset>
+                    <legend>Promo Code : </legend>
+                    <p >
+                        <label for="promocode">Promo Code : </label>
+                        <input type="text" id="promocode">
+                    </p>
+                </fieldset>
+                <fieldset >
+                    <legend>Current Cost : </legend>
+                    <p id="currentCostOutput"></p>
+                    <p id="output2"></p>
+                    <p id="output3"></p>
+                    <p id="output4"></p>
+                    <p id="output5"></p>
+                    <p id="output6"></p>
+                    <p id="output7"></p>
+                </fieldset>
+                <fieldset class="btnClass">
+                    <legend>Book Now : </legend>
+                    <button type="button" id="bookButton">Book Now</button>
+                    <button type="button" id="checkFav">Check Favourite</button>
+                    <button type="button" id="resetForm">Reset Form</button>
+                    <button type="button" id="checkLoyaltyBtn">Check Loyalty</button>
+                </fieldset>
+            </form>
+            <div>
+                <form>
+                    <h2>Book Adventure</h2>
+                    <!-- Book Adventure -->
+                    <fieldset class="personalInfoClass1">
+                        <legend>Personal Information : </legend>
+                        <label for="personName">Name : </label>
+                        <input type="text" id="personName2" class="personName" placeholder="Enter Full Name" required>
+                        <label for="contactId">Contact Number : </label>
+                        <input type="tel" id="contactId2" class="contactId" placeholder="Enter Phone Number" required>
+                        <label for="emailId">Email Address : </label>
+                        <input type="email" id="emailId2" class="emailId" placeholder="Enter Email Address">
+                        <label for="countryId">Country : </label>
+                        <input type="text" id="countryId2" class="countryId" placeholder="Country">
+                        <label for="gender">Gender : </label>
+                        <select name="genber" id="gender2" class="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select><br>
+                        <label for="specialreqId">Special Requests : </label> <br>
+                        <textarea id="specialreqId2" class="specialreqId" placeholder="Special Requests..."></textarea>
+                    </fieldset>
+                    <fieldset class="advbookFldset">
+                        <legend >Branch : </legend>
+                        <input type="radio" name="branchName1" id="colomboBranch2" value="colombo" class="branchClass">
+                        <label for="colomboBranch2">Colombo </label>
+                        <input type="radio" name="branchName1" id="negomboBranch2" value="negombo" class="branchClass">
+                        <label for="negomboBranch2">Negombo </label>
+                        <input type="radio" name="branchName1" id="galleBranch2" value="galle" class="branchClass">
+                        <label for="galleBranch2">Galle </label>
+                    </fieldset>
+                    <fieldset class="advbookFldset">
+                        <legend>Adventure : </legend>
+                        <label class="guideselection" for="localadults"> Customize Your Adventure</label>
+                        <p>
+                            <label class="adventure" for="localadults">Diving for local Adults (1 hr) </label>
+                            <input type="number" name="adventure" id="localadults" min="0" value="0" class="advInputsClass">
+                        </p>
+                        <p>
+                            <label class="adventure" for="localkids">Diving for local kids (above 5 years)</label>
+                            <input type="number" name="adventure" id="localkids" min="0" value="0" class="advInputsClass"> 
+                        </p>
+                        <p>
+                            <label class="adventure" for="foreignadults">Diving for foreign adults </label>
+                            <input type="number" name="adventure" id="foreignadults" min="0" value="0" class="advInputsClass">
+                        </p>
+                        <p>
+                            <label class="adventure" for="foreignkids">Diving for foreign kids</label>
+                            <input type="number" name="adventure" id="foreignkids" min="0" value="0" class="advInputsClass">
+                        </p>
+                        <label class="guideselection">If in need for a guide during the diving session</label>
+                        <p>
+                            <label class="adultsguideclass" for="adultsguide">Adult (1000LKR extra will be charged)</label>
+                            <input type="number" name="divinguide" id="adultsguide" min="0" value="0" class="advInputsClass">
+                        </p>
+                        <p>
+                            <label class="adultsguideclass" for="kidsguide">Kids (500LKR extra will be charged) </label>
+                            <input type="number" name="divinguide" id="kidsguide" min="0" value="0" class="advInputsClass">
+                        </p>
+                    </fieldset>
+                    <fieldset class="btnClass2">
+                        <legend>Book Adventure : </legend>
+                        <button type="button" id="advBookBtn">Book Adventure</button>
+                        <button type="button" id="advresetForm">Reset Form</button>
+                        <button type="button" id="advcheckFav">Check Favourite</button>
+                    </fieldset> 
+                </form>
+                <form>
+                    <fieldset class="advbookFldset">
+                        <legend>Pay Now : </legend>
+                        <label for="cardnum">Card Number : </label>
+                        <input type="number" min="0" id="cardnum" placeholder="Card Number" required>
+                        <label for="cardname">Name on Card : </label>
+                        <input type="text" id="cardname" placeholder="Name on Card" required>
+                        <label id="expdatelblId" for="expdate">Expire Date : </label>
+                        <input type="month" id="expdate" required> <br>
+                        <label id="cvcldl" for="cvcId">CVC : </label>
+                        <input type="number" min="0" id="cvcId" required>
+                    </fieldset>
+                    <fieldset class="btnClass2">
+                        <button type="button" id="paynowButton">Pay Now</button>
+                        <button type="reset" id="resetForm">Reset Form</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="outputDiv" id="popup">
+            <fieldset id="outputFieldset">
+                <legend>Total</legend>
+                <p id="popusdetails"></p>
+                <button type="button" id="continueBtn" onclick="continueFunction()">Continue</button>
+                <button type="button" id="favButton" onclick="addfavFunction()">Add Favorites</button>
+            </fieldset>
+        </div>
+        <div class="outputpopup2" id="popup2">
+            <h3>Added To Favorites!</h3>
+            <p>
+                Your Previous Order Added to Favorites Successfully!!!
+            </p>
+            <button type="button" id="closeBtn">Close</button>
+        </div>
+        <div class="outputpopup3" id="popup3">
+            <p id="loyaltyoutput"></p>
+            <button type="button" id="closeBtn2">Close</button>
+        </div>
+        <br><br>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="col1">
+                <div class="footerul">
+                    <ul>
+                        <li>Contact Number : 076 663 0615</li>
+                        <li>Address : 344, School lane, Colombo.</li>
+                        <li>Email : beach.view@gmail.com</li>
+                    </ul>
+                </div>
+                <a href="index.html"><img src="home_logo2.png" class="footerlogo1" alt="footerlogo1"></a>
+                <div class="footerul">
+                    <ol>
+                        <li>INQUIRIES: INFO@THEBEACHVIEW.COM</li>
+                        <li>RESERVATIONS: RESERVATIONS@THEBEACHVIEW.COM</li>
+                    </ol>
+                </div>
+                <div class="s_m">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="facebook.png" class="s_m1" alt="fb_pic"></a>
+                    <a href="https://www.instagram.com/accounts/login/"><img src="instagram.png" class="s_m1" alt="insta_pic"></a>
+                    <a href="https://www.tiktok.com/"><img src="tiktok.png" class="s_m1" alt="tiktok_pic"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="twitter.png" class="s_m1" alt="twitter_pic"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<!-- REFRENCES:
+1. https://www.thekingsburyhotel.com/
+2. https://www.cinnamonhotels.com/hikkatranzcinnamon/meetings-and-conferences
+3. https://www.gallefacehotel.com/
+4. https://www.shangri-la.com/group/our-story/
+5. https://www.jetwinghotels.com/jetwingblue/
+6. https://www.jetwinghotels.com/jetwingcolomboseven/
+7. https://www.visitcalifornia.com/best-san-diego-hotels/
+8. https://www.cinnamonhotels.com/cinnamongrandcolombo/experiences#Adventures
+9. https://kr.lakpura.com/pages/crescat-boulevard
+10. https://www.freepik.com/free-vector/empty-office-due-pandemic_7966692.htm#query=meeting%20background&position=37&from_view=keyword&track=ais -->

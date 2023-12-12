@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The Beach view hotel">
+        <title>The Beach View Restaurants</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="inquire.js" defer></script>
+    </head>
+    <body id="body1">
+        <!-- Navigation Bar -->
+        <header class="header_1">
+            <a href="index.html"><img class="logo" src="home_logo.png" alt="mainlogo"></a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="adventures.html">Adventures</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                </ul>
+            </nav>
+        </header>
+           <!-- Book Button -->
+        <div class="bookbtn">
+            <a href="booknow.html">Book Now</a>
+        </div>
+        <h1 class="res_h1">Restaurants</h1>
+        <section>
+            <!--Restaurant One-->
+            <div class="adv_col1" id="res_content">
+                <video poster="res_1.jpg" class="video_1" controls>
+                    <source src="video_1.mp4" type="video/mp4">
+                </video>
+                <div class="res_para1">
+                    <p>FINE DINING</p>
+                    <h2>KINGS STEAKBAR</h2>
+                    <p>Extraordinary, melt-on-the-mouth steak, with great complexity of flavour. No one does it better than the Kings SteakBar. 
+                        The city&apos;s most popular option for fine dining in Colombo. The wines are spectacular too where great beef and great
+                        reds go hand in hand. Peruse the tray of raw cuts or just for that ribeye served with a choice of sauces.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section>
+            <!--Restaurant Two-->
+            <div class="adv_col1">
+                <div class="res_para2">
+                    <p>COLOMBO BUFFETS</p>
+                    <h2>HARBOUR COURT</h2>
+                    <p>The Harbour Court is The Kingsbury&apos;s all-day-dining restaurant serving an impressive array of international and fusion dishes.
+                        One of the most popular buffets in Colombo, the Harbour Court boasts a variety of live cooking stations and gourmet
+                        theatrics featuring award wining chefs from across the world.</p>
+                </div>
+                <img src="res_2.jpg" class="res_img1" alt="res_img1">
+            </div>
+        </section>
+        <br><br>
+        <section>
+            <!--Restaurant Three-->
+            <div class="adv_col1">
+                <img src="res_3.jpg" class="res_img2" alt="res_img2">
+                <div class="res_para1" id="res_para3">
+                    <p>CHINESE CUISINE</p>
+                    <h3>YUE CHUAN</h3>
+                    <p>Whether you&apos;re looking for fiery Sichuan, dim sum or dumplings, Yue Chuan is one of the finest Chinese restaurants in Colombo.
+                        We invite you to experience an extensive menu serving the best Chinese food in Colombo, coupled with glamour and excellent 
+                        service. Led by Chefs who have mastered the art of Sichuan cuisine, The Beach View, Colombo hosts one of the most popular 
+                        restaurants for both business lunches and family dinners.</p>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <div id="res_div">
+            <!--Events-->
+            <h4 id="res_h4">EVENTS</h4>
+            <div class="adv_col1" id="event_nav">
+                <div class="btn1">
+                    <a href="weddings.html" class="event_btn1" id="event_btn1">Weddings</a>
+                </div>
+                <a href="meetings.html" class="event_btn1" id="event_btn2">Meetings</a>
+            </div>
+        </div>
+        <br><br>
+        <div id="inquirePopup" class="inquirePopupClass">
+            <h3>Inquire Sent Successfully!!!</h3>
+            <button type="button" id="InqcloseBtn">Close</button>
+        </div>
+        <!--Footer-->
+        <footer class="footer">
+            <fieldset class="inquire_field2">
+                <legend>Inquire Now</legend>
+                <form>
+                Hotels :
+                    <select name="hotels" id="hotels">
+                        <option>Select Branch</option>
+                        <option value="colombo">Colombo Branch</option>
+                        <option value="galle">Galle Branch</option>
+                        <option value="kandy">Kandy Branch</option>
+                    </select>
+                    Contact Number : <input type="tel" name="contact_num" size="13" maxlength="14" required="required">
+                    Email : <input type="email" name="email" required="required">
+                    Other : <input type="text" name="other_msg"> &nbsp;&nbsp;
+                    <span id="grid_button">
+                        <button type="button" name="submit" id="inquiresubBtn" class="submit_btn">Submit</button>
+                        <input type="reset" name="reset" class="reset_btn">
+                    </span>
+                </form>
+            </fieldset>
+            <br>
+           <div class="col1" id="footercol1">
+                <div class="footerul">
+                    <ul>
+                        <li>Contact Number : 076 663 0615</li>
+                        <li>Address : 344, School lane, Colombo.</li>
+                        <li>Email : beach.view@gmail.com</li>
+                    </ul>
+                </div>
+                <a href="index.html"><img src="home_logo2.png" class="footerlogo1" alt="footerlogo1"></a>
+                <div class="footerul">
+                    <ol>
+                        <li>INQUIRIES: INFO@THEBEACHVIEW.COM</li>
+                        <li>RESERVATIONS: RESERVATIONS@THEBEACHVIEW.COM</li>
+                    </ol>
+                </div>
+                <div class="s_m">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="facebook.png" class="s_m1" alt="fb_pic"></a>
+                    <a href="https://www.instagram.com/accounts/login/"><img src="instagram.png" class="s_m1" alt="insta_pic"></a>
+                    <a href="https://www.tiktok.com/"><img src="tiktok.png" class="s_m1" alt="tiktok_pic"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="twitter.png" class="s_m1" alt="twitter_pic"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<!-- REFRENCES:
+1. https://www.thekingsburyhotel.com/
+2. https://www.cinnamonhotels.com/hikkatranzcinnamon/meetings-and-conferences
+3. https://www.gallefacehotel.com/
+4. https://www.shangri-la.com/group/our-story/
+5. https://www.jetwinghotels.com/jetwingblue/
+6. https://www.jetwinghotels.com/jetwingcolomboseven/
+7. https://www.visitcalifornia.com/best-san-diego-hotels/
+8. https://www.cinnamonhotels.com/cinnamongrandcolombo/experiences#Adventures
+9. https://kr.lakpura.com/pages/crescat-boulevard
+10. https://www.freepik.com/free-vector/empty-office-due-pandemic_7966692.htm#query=meeting%20background&position=37&from_view=keyword&track=ais
+11. https://www.thekingsburyhotel.com/dining/harbour-court
+12. https://www.thekingsburyhotel.com/dining/kings-steakbar
+13. https://www.thekingsburyhotel.com/dining/yue-chuan -->
